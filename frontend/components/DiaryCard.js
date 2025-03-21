@@ -1,7 +1,4 @@
 import { diaries } from '../../backend/data/diaries.js';
-import { fetchUser } from '../../backend/data/user-object.js';
-
-const user = fetchUser();
 
 export function generateDiariesHTML() {
   let diariesHTML = '';
@@ -79,7 +76,6 @@ export function generateDiariesHTML() {
             </div>
           </div>
       </div>
-        
   `;
   });
 

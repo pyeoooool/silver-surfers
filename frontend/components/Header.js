@@ -1,3 +1,7 @@
+import { fetchUser } from '../../backend/data/user-object.js';
+
+const user = fetchUser();
+
 export function generateHeaderHTML() {
   let headerHTML = '';
 
@@ -20,7 +24,7 @@ export function generateHeaderHTML() {
     </div>
 
     <div class="header-right-section">
-        <img class="profile-picture-icon js-profile-icon" src="../public/user-uploads/profile-pictures/random-woman-1.jpg" />
+        <img class="profile-picture-icon js-profile-icon" src="${user.photo}" />
     </div>
   `;
 

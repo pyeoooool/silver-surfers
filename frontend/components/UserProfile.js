@@ -1,3 +1,7 @@
+import { fetchUser } from "../../backend/data/user-object.js";
+
+const user = fetchUser();
+
 export function generateProfileHTML() {
   let profileHTML = '';
   document.title = `Profile - ${user.username}`;
