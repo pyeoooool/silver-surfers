@@ -1,3 +1,9 @@
+@import url('../frontend/components/General.css');
+@import url('../frontend/components/Header.css');
+@import url('../frontend/components/Settings.css');
+@import url('../frontend/components/UserProfile.css');
+
+
 .news-feed {
   margin: 0;
   padding: 0;
